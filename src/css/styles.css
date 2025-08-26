@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+body {
+    @apply bg-[#fcfcfc] text-[#141414]
+}
+
+img {
+    @apply w-full h-[1300px] object-cover;
+}
+
+h1 {
+    @apply uppercase text-center text-[2.5rem] md:text-[5rem] font-[650] leading-[1];
+}
+
+section {
+    @apply relative overflow-hidden w-dvw;
+}
+
+.hero, .outro {
+    @apply h-svh flex items-center justify-center p-8;
+}
+
+.work-item {
+    @apply h-[150svh] size-full;
+}
+
+.work-item-img {
+    clip-path: polygon(25% 25%, 75% 40%, 100% 100%, 0% 100%);
+    will-change: clip-path;
+}
+
+.work-item-name {
+    @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full z-[1];
+}
+
+.work-item-name h1 {
+    @apply text-white;
+}
